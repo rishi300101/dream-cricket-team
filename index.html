@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dream Cricket Team</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+  <!-- Team Header -->
+  <header class="team-header">
+    <img src="images/logo.png" alt="Team Logo" class="logo">
+    <h1>Thunder Bats</h1>
+    <p class="slogan">Every ball is a battle. Every win is war</p>
+  </header>
+
+  <!-- Player Cards -->
+  <main class="player-grid">
+
+    <div class="player-card" onclick="openModal(0)">
+      <img src="images/player1.png" alt="Player 1">
+      <h3>Player One</h3>
+      <p>Batsman</p>
+    </div>
+
+    <div class="player-card" onclick="openModal(1)">
+      <img src="images/player2.png" alt="Player 2">
+      <h3>Player Two</h3>
+      <p>Bowler</p>
+    </div>
+
+    <div class="player-card" onclick="openModal(2)">
+      <img src="images/player3.png" alt="Player 3">
+      <h3>Player Three</h3>
+      <p>All-Rounder</p>
+    </div>
+
+    <div class="player-card" onclick="openModal(3)">
+      <img src="images/player4.png" alt="Player 4">
+      <h3>Player Four</h3>
+      <p>Wicket Keeper</p>
+    </div>
+
+    <div class="player-card" onclick="openModal(4)">
+      <img src="images/player5.png" alt="Player 5">
+      <h3>Player Five</h3>
+      <p>Batsman</p>
+    </div>
+
+    <div class="player-card" onclick="openModal(5)">
+      <img src="images/player6.png" alt="Player 6">
+      <h3>Player Six</h3>
+      <p>Bowler</p>
+    </div>
+
+  </main>
+
+  <!-- Modal -->
+  <div id="playerModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-name"></h2>
+      <p><strong>Strike Rate:</strong> <span id="modal-strike"></span></p>
+      <p><strong>Matches Played:</strong> <span id="modal-matches"></span></p>
+      <p><strong>Jersey Number:</strong> <span id="modal-jersey"></span></p>
+      <p><strong>Best Performance:</strong> <span id="modal-best"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
